@@ -1,0 +1,7 @@
+db.auth("root", "12345678")
+use admin
+exit
+db.test.insertOne({ msg: "Hello MongoDB" })
+use j4f
+show dbs;
+show database

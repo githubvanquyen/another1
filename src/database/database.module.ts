@@ -7,7 +7,7 @@ import { DatabaseConfigKey, DatabaseConfigType } from "../config/database.config
     imports: [
         MongooseModule.forRootAsync({
             inject: [ConfigService],
-            useFactory: (configService: ConfigService) => configService.get<DatabaseConfigType>(DatabaseConfigKey) as MongooseModuleFactoryOptions
+            useFactory: (configService: ConfigService) => configService.get<DatabaseConfigType>(DatabaseConfigKey) as MongooseModuleFactoryOptions,
         })
     ]
 })
